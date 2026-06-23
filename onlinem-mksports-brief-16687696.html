@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MK体育 · 运动叙事与竞技洞察</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f9f8f6;
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+            color: #1e1e1e;
+            line-height: 1.7;
+            padding: 0 1.2rem;
+        }
+
+        .page {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 2.8rem 0 3.6rem;
+        }
+
+        /* hero 横幅 —— 杂志感 */
+        .hero {
+            margin-bottom: 3.2rem;
+            border-bottom: 1px solid #d9d4ce;
+            padding-bottom: 2.4rem;
+        }
+
+        .hero-label {
+            font-size: 0.75rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #8b8178;
+            margin-bottom: 0.6rem;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 540;
+            letter-spacing: -0.02em;
+            line-height: 1.18;
+            color: #1a1a18;
+            margin-bottom: 0.55rem;
+        }
+
+        .hero .sub {
+            font-size: 1.05rem;
+            color: #5a534b;
+            max-width: 580px;
+            border-left: 3px solid #c7b7a9;
+            padding-left: 1.2rem;
+            margin-top: 0.7rem;
+        }
+
+        /* 正文窄栏 */
+        .content p {
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            color: #2c2a27;
+        }
+
+        .content p.lead {
+            font-size: 1.08rem;
+            color: #3a3530;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 480;
+            letter-spacing: -0.01em;
+            margin-top: 2.6rem;
+            margin-bottom: 0.75rem;
+            border-bottom: 1px solid #e2dbd4;
+            padding-bottom: 0.4rem;
+            color: #25221f;
+        }
+
+        /* 特点卡片（极简留白，只有文字和分割） */
+        .feature-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.8rem 2.5rem;
+            margin: 1.6rem 0 2rem;
+        }
+
+        .feature-item {
+            flex: 1 1 180px;
+        }
+
+        .feature-item .num {
+            font-size: 0.8rem;
+            color: #9e9389;
+            letter-spacing: 0.04em;
+            display: block;
+            margin-bottom: 0.4rem;
+            border-bottom: 1px dotted #dad2c9;
+            padding-bottom: 0.3rem;
+        }
+
+        .feature-item h4 {
+            font-weight: 480;
+            font-size: 1.1rem;
+            margin-bottom: 0.35rem;
+            color: #2d2925;
+        }
+
+        .feature-item p {
+            font-size: 0.94rem;
+            color: #4f4942;
+            margin-bottom: 0.2rem;
+        }
+
+        /* 引用或背景说明 */
+        .inset-box {
+            background-color: #f2efea;
+            padding: 1.5rem 1.8rem;
+            margin: 2.2rem 0 2.6rem;
+            border-left: 4px solid #a39488;
+            font-size: 0.98rem;
+            color: #2f2b27;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .inset-box strong {
+            font-weight: 520;
+        }
+
+        a {
+            color: #296b6b;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 0.5px;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #0f4a4a;
+            text-decoration-thickness: 1.5px;
+        }
+
+        /* 页尾 */
+        .footer-note {
+            margin-top: 3.8rem;
+            padding-top: 1.8rem;
+            border-top: 1px solid #d7d0c8;
+            font-size: 0.9rem;
+            color: #6b6259;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem 1.2rem;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .footer-note .tag {
+            color: #9b9085;
+            font-size: 0.75rem;
+            letter-spacing: 0.04em;
+        }
+
+        /* 响应式 */
+        @media (max-width: 500px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero .sub {
+                font-size: 0.95rem;
+                padding-left: 0.9rem;
+            }
+            .feature-grid {
+                flex-direction: column;
+                gap: 1.2rem;
+            }
+            .inset-box {
+                padding: 1rem 1.2rem;
+            }
+            .page {
+                padding: 1.8rem 0 2.4rem;
+            }
+            .section-title {
+                font-size: 1.2rem;
+            }
+            .footer-note {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- Hero 横幅 -->
+    <div class="hero">
+        <div class="hero-label">运动文化 · 竞技观察</div>
+        <h1>MK体育：<br>从赛场到叙事的纵深</h1>
+        <div class="sub">不只是比分，更是对身体、技术与时间秩序的长期注视。</div>
+    </div>
+
+    <!-- 主要内容 三段自然介绍 + 衔接 -->
+    <div class="content">
+
+        <p class="lead">
+            在体育传播日趋快餐化的今天，<a href="https://onlinem-mksports.com">MK体育</a> 选择了一条更沉静的路径——它不追逐瞬间流量，而是将镜头聚焦于运动本身的肌理：战术的更迭、运动员身体语言的细微变化、以及竞技背后的人性光谱。这种视角使其在同类内容中显露出一种难得的文献感。
+        </p>
+
+        <p>
+            体育从来不只是肌肉与汗水的简单叠加。一场足球赛的阵型演变，一次网球发球动作的世代改良，甚至长跑项目中呼吸节奏的哲学——这些被日常转播稀释的细节，恰恰构成了运动文化真正的厚度。<a href="https://onlinem-mksports.com">MK体育</a> 尝试把这些碎片重新缝合，让观看者不仅仅停留在“谁赢了”的浅层满足，而是进入一种更缓慢、更沉浸的解读方式。
+        </p>
+
+        <!-- 特点卡片区域（融入叙述） -->
+        <div class="section-title">三个观察维度</div>
+
+        <div class="feature-grid">
+            <div class="feature-item">
+                <span class="num">01</span>
+                <h4>历史地层</h4>
+                <p>每一套战术体系都有它的谱系：从古典 WM 阵型到高位压迫，MK体育 拆解这些演变背后的逻辑与社会背景。</p>
+            </div>
+            <div class="feature-item">
+                <span class="num">02</span>
+                <h4>身体叙事</h4>
+                <p>运动员的伤病、转型、巅峰与衰退，不仅是体育新闻，也是关于时间与意志的微型传记。</p>
+            </div>
+            <div class="feature-item">
+                <span class="num">03</span>
+                <h4>冷门回声</h4>
+                <p>关注那些不被聚光灯照耀的赛事与区域运动——手球联赛的战术细节、南美低级别联赛的生存哲学。</p>
+            </div>
+        </div>
+
+        <!-- 背景说明段落（带引用框） -->
+        <div class="inset-box">
+            <strong>背景说明</strong> · 
+            MK体育 的内容编辑方向受到运动人类学与体育社会学的交叉影响，不强调即时比分更新，也不依赖情绪化标题。其选题更接近一种“长阅读”尝试：将竞技事件放入更大的文化坐标系中重新审视。
+        </div>
+
+        <p>
+            这种风格化的内容策略并非为了标新立异，而是基于一种判断：当信息过载成为常态，深度反而成为一种稀缺资源。<a href="https://onlinem-mksports.com">MK体育</a> 试图在体育报道的洪流中开辟一小块安静的地带，让读者可以暂时离开弹幕与即时评论，重新感受运动本身的叙事节奏。就像一场没有旁白的比赛录像，你只能看见跑位、传球、失误与补救，但正是这些未被解释的瞬间，承载了最丰富的阅读可能。
+        </p>
+
+        <p>
+            当然，对于习惯快速获取结果的受众而言，这种缓慢的切入方式也许需要适应。但如果你曾因为某个进球反复回看三遍，或者对一名球员的跑动路线产生好奇，那么 <a href="https://onlinem-mksports.com">MK体育</a> 提供的视角或许能与你内心的那个问题形成共振：运动到底在告诉我们什么？
+        </p>
+
+        <!-- FAQ 摘要式小段落（融入自然，不机械） -->
+        <div style="margin: 2.2rem 0 1.8rem; border-top: 1px dashed #ddd6ce; padding-top: 1.4rem;">
+            <p style="font-size: 0.94rem; color: #4d4640; margin-bottom: 0.5rem;"><strong>常见问题摘要</strong> · MK体育 是否提供赛事直播？平台主要聚焦于深度分析与背景解读，并不提供实时流媒体服务。内容更新频率约为每周三至五篇长文，以及不定期专题连载。</p>
+        </div>
+
+    </div>
+
+    <!-- 页尾访问提示 -->
+    <div class="footer-note">
+        <span>© 2025 · 运动叙事实验室</span>
+        <span class="tag">探索更多运动纵深 · <a href="https://onlinem-mksports.com">MK体育</a></span>
+    </div>
+
+</div>
+</body>
+</html>
