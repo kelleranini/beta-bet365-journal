@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>简明指南 · MK体育访问笔记</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f9f8f6;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      color: #1e1e1e;
+      line-height: 1.75;
+      padding: 2.5rem 1.25rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .page {
+      max-width: 680px;
+      width: 100%;
+    }
+
+    article {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 2.2rem 2.4rem;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 1.85rem;
+      font-weight: 550;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      margin-bottom: 0.6rem;
+      color: #111;
+    }
+
+    .lead {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: #4a4a4a;
+      border-left: 3px solid #d4d2cb;
+      padding-left: 1.2rem;
+      margin: 1.2rem 0 1.8rem 0;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 530;
+      margin: 2.2rem 0 0.6rem 0;
+      letter-spacing: -0.01em;
+      color: #1e1e1e;
+    }
+
+    p {
+      margin-bottom: 1.15rem;
+      font-size: 1rem;
+      color: #2a2a2a;
+    }
+
+    .highlight-box {
+      background: #f3f1ed;
+      border-radius: 12px;
+      padding: 1.2rem 1.5rem;
+      margin: 1.8rem 0;
+      font-size: 0.95rem;
+      border-left: 4px solid #b0a9a0;
+    }
+
+    .highlight-box strong {
+      font-weight: 560;
+      color: #222;
+    }
+
+    .list-item {
+      margin-bottom: 0.75rem;
+      padding-left: 1.2rem;
+      position: relative;
+    }
+
+    .list-item::before {
+      content: "·";
+      position: absolute;
+      left: 0.2rem;
+      color: #8a847c;
+      font-weight: 600;
+    }
+
+    a {
+      color: #2f5a7a;
+      text-decoration: none;
+      border-bottom: 1px solid #cbd8e4;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    a:hover {
+      color: #0d2e46;
+      border-bottom-color: #0d2e46;
+    }
+
+    .footnote {
+      font-size: 0.88rem;
+      color: #707070;
+      border-top: 1px solid #e3e0da;
+      padding-top: 1.4rem;
+      margin-top: 2rem;
+    }
+
+    .faq-item {
+      margin-top: 1.4rem;
+    }
+
+    .faq-item strong {
+      display: block;
+      font-weight: 530;
+      margin-bottom: 0.25rem;
+      font-size: 1rem;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #ece9e3;
+      border-radius: 20px;
+      padding: 0.2rem 0.9rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: #4f4a42;
+      margin-right: 0.4rem;
+      letter-spacing: 0.02em;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1.5rem 1rem;
+      }
+      article {
+        padding: 1.6rem 1.2rem;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      .lead {
+        font-size: 1rem;
+        padding-left: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <article>
+      <h1>访问 <a href="https://onlineindex-mksports.com">MK体育</a> 的简明指南</h1>
+      <div class="lead">
+        对于习惯信息精简的用户，这篇笔记整理了关于平台结构、常见疑问和访问时值得留意的小细节，以便快速上手。
+      </div>
+
+      <p>
+        <a href="https://onlineindex-mksports.com">MK体育</a> 在近期的索引调整中保持了相对稳定的入口路径。对多数用户而言，直接访问主域名是最直接的方式。不过由于网络环境与本地策略的差异，偶尔会遇到加载延迟或页面反馈异常的情况。此时可以先检查本地连接是否正常，并留意浏览器的安全提示——大部分临时状况可以通过刷新或更换网络环境解决。
+      </p>
+
+      <h2>平台的基本结构</h2>
+      <p>
+        首页采用卡片式布局，将不同运动类型与热门赛事集中展示。导航栏分为「焦点赛事」「联赛专栏」「数据看板」和「资讯」四个主要分区。每个分区下的内容粒度适中，既保留了深度数据，也避免了信息过载。对于初次接触的用户，建议从「焦点赛事」开始，快速熟悉界面逻辑。
+      </p>
+
+      <div class="highlight-box">
+        <strong>访问提示</strong> · 如果你在浏览器中看到证书相关提示或页面样式错乱，可以先确认系统时间是否准确，并尝试使用无痕窗口重新加载。多数表现异常属于本地缓存或安全策略干扰，与平台本身无关。
+      </div>
+
+      <h2>值得留意的几个场景</h2>
+      <div class="list-item">移动端浏览时，部分数据表格会自动折叠为列表模式，左右滑动可查看完整字段。</div>
+      <div class="list-item">「数据看板」中的统计图支持点击筛选时间范围，默认展示最近七天的变化曲线。</div>
+      <div class="list-item">资讯板块的发布日期按 UTC+8 显示，历史文章可通过右上角日历控件快速定位。</div>
+
+      <p>
+        此外，如果你习惯使用密码管理器或第三方登录工具，建议在首次访问 <a href="https://onlineindex-mksports.com">MK体育</a> 时手动输入主域名，再保存凭证。部分自动填充插件会在跨域环境下产生冲突，导致登录流程卡顿。极少数情况下，浏览器会弹出「未经验证的脚本」警告——这通常来自广告拦截扩展的规则误判，暂时关闭该页面或添加白名单即可恢复正常。
+      </p>
+
+      <h2>FAQ 摘要</h2>
+
+      <div class="faq-item">
+        <strong>页面部分内容加载不全怎么办？</strong>
+        <p>先确认网络连接稳定，然后尝试刷新或清除浏览器缓存。若问题持续，可切换至 4G/5G 网络对比测试。某些公共 Wi-Fi 会限制特定端口，影响实时数据推送。</p>
+      </div>
+
+      <div class="faq-item">
+        <strong>是否需要注册才能浏览全部内容？</strong>
+        <p>公开区域（赛事资讯、基础数据）无需登录即可查看。涉及个性化设置、收藏功能或深度统计分析时，才需要注册账户。注册流程仅需邮箱与用户名，不强制绑定手机。</p>
+      </div>
+
+      <div class="faq-item">
+        <strong>移动端与桌面端的体验差异大吗？</strong>
+        <p>核心功能一致，但桌面端在大屏多窗口操作时效率更高，尤其适合同时查看数据看板与赛事列表。移动端针对单手操作做了微调，底部导航更突出。</p>
+      </div>
+
+      <div class="footnote">
+        <span class="tag">指南</span>
+        <span class="tag">访问笔记</span>
+        <span class="tag">v1.2</span>
+        <br>
+        本文档仅为使用经验记录，不构成任何形式的承诺或推荐。实际体验以网站实时表现为准。最后更新于最近一次索引变更周期。
+      </div>
+    </article>
+  </div>
+</body>
+</html>
